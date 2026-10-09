@@ -2,7 +2,7 @@
 
 All notable changes are listed here. The format follows [Keep a Changelog](https://keepachangelog.com/).
 
-## [0.1.0] - unreleased
+## [0.1.0]
 
 First public version.
 
