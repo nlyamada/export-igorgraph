@@ -15,7 +15,12 @@ classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Science/Research",
     "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
     "Topic :: Scientific/Engineering :: Visualization",
 ]
 dependencies = [
@@ -29,8 +34,9 @@ tools = ["pillow", "scipy", 'pywin32; sys_platform == "win32"']
 
 [project.urls]
 Homepage = "https://github.com/nlyamada/export-igorgraph"
+Documentation = "https://github.com/nlyamada/export-igorgraph/tree/HEAD/docs/en"
 Issues = "https://github.com/nlyamada/export-igorgraph/issues"
-Changelog = "https://github.com/nlyamada/export-igorgraph/blob/main/CHANGELOG.md"
+Changelog = "https://github.com/nlyamada/export-igorgraph/blob/HEAD/CHANGELOG.md"
 
 [project.scripts]
 export-igorgraph = "export_igorgraph.__main__:main"

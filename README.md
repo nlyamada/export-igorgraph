@@ -5,9 +5,9 @@
 `export_igor(fig, outdir, name)` writes one HDF5 file (`name.h5`) containing the real data and the Igor drawing commands.
 In Igor you load it with `LoadPythonFigure()` — no per-figure procedure files.
 
-[日本語の README](README.ja.md)
+[日本語の README](https://github.com/nlyamada/export-igorgraph/blob/HEAD/README.ja.md)
 
-![matplotlib (left) and Igor Pro 8 (right)](docs/images/overview_lines.png)
+![matplotlib (left) and Igor Pro 8 (right)](https://raw.githubusercontent.com/nlyamada/export-igorgraph/HEAD/docs/images/overview_lines.png)
 
 ## Why
 
@@ -67,7 +67,7 @@ The main settings are plain `style=` entries — `tick`, `mirror`, `standoff`, `
 export_igor(fig, "out", "fig1", style={"tick": 0, "grid": 1, "width": 300, "height": 200})
 ```
 
-Settings you always want can live in a JSON file (`export_igorgraph_style.json` in the current folder or `~/.export_igorgraph_style.json`; see `export_igorgraph_style.example.json`). Unknown keys warn, invalid values raise an error. All keys: [docs/en/usage.md](docs/en/usage.md).
+Settings you always want can live in a JSON file (`export_igorgraph_style.json` in the current folder or `~/.export_igorgraph_style.json`; see `export_igorgraph_style.example.json`). Unknown keys warn, invalid values raise an error. All keys: [docs/en/usage.md](https://github.com/nlyamada/export-igorgraph/blob/HEAD/docs/en/usage.md).
 
 ### Contours over an image (e.g. a fit over 2-D data)
 
@@ -80,7 +80,7 @@ export_igor(fig, "out", "fig_fit")      # the contour becomes an Igor contour; c
 matplotlib does not keep the Z matrix of a contour set. `import export_igorgraph` wraps the public `Axes.contour`/`contourf` to remember `(X, Y, Z)` at call time;
 if a contour was drawn earlier, pass `export_igor(..., contour_data=(X, Y, Z))`. Requires matplotlib ≥ 3.8.
 
-![images, contours, markers](docs/images/overview_images.png)
+![images, contours, markers](https://raw.githubusercontent.com/nlyamada/export-igorgraph/HEAD/docs/images/overview_images.png)
 
 ## How it works
 
@@ -94,14 +94,14 @@ matplotlib Figure ──export_igor()──▶ name.h5 (waves + commands) ──
 
 - Verified on **Igor Pro 8.04, Windows**. Other Igor versions and macOS are untested (reports welcome).
 - Python 3.9+; matplotlib 3.6–3.10 pass the test suite (contours need ≥ 3.8).
-- What is supported, what is not, and known differences: [docs/en/supported.md](docs/en/supported.md).
-- How everything was verified and calibrated: [docs/en/verified.md](docs/en/verified.md).
+- What is supported, what is not, and known differences: [docs/en/supported.md](https://github.com/nlyamada/export-igorgraph/blob/HEAD/docs/en/supported.md).
+- How everything was verified and calibrated: [docs/en/verified.md](https://github.com/nlyamada/export-igorgraph/blob/HEAD/docs/en/verified.md).
 - The default layout is a compact single-column style (8 cm plot width, Arial, inside ticks). Use `use_mpl_size=True` to take sizes from the matplotlib figure, or override anything via `style=`.
 
 ## Safety
 
 A `.h5` carries commands that Igor executes, so the loader only runs commands that fully match a strict allow-list; if any command is rejected, nothing is loaded.
-See [docs/en/safety.md](docs/en/safety.md) for the design and its limits, and [SECURITY.md](SECURITY.md) to report a problem.
+See [docs/en/safety.md](https://github.com/nlyamada/export-igorgraph/blob/HEAD/docs/en/safety.md) for the design and its limits, and [SECURITY.md](https://github.com/nlyamada/export-igorgraph/blob/HEAD/SECURITY.md) to report a problem.
 
 ## Use with Claude
 
@@ -114,10 +114,10 @@ See [docs/en/safety.md](docs/en/safety.md) for the design and its limits, and [S
 
 ## Documentation
 
-[Usage](docs/en/usage.md) · [Supported features](docs/en/supported.md) · [Safety](docs/en/safety.md) · [Verification](docs/en/verified.md) · [Driving Igor automatically](docs/en/igor-automation.md) · [Developing](docs/en/developing.md) · [日本語ドキュメント](docs/ja/)
+[Usage](https://github.com/nlyamada/export-igorgraph/blob/HEAD/docs/en/usage.md) · [Supported features](https://github.com/nlyamada/export-igorgraph/blob/HEAD/docs/en/supported.md) · [Safety](https://github.com/nlyamada/export-igorgraph/blob/HEAD/docs/en/safety.md) · [Verification](https://github.com/nlyamada/export-igorgraph/blob/HEAD/docs/en/verified.md) · [Driving Igor automatically](https://github.com/nlyamada/export-igorgraph/blob/HEAD/docs/en/igor-automation.md) · [Developing](https://github.com/nlyamada/export-igorgraph/blob/HEAD/docs/en/developing.md) · [日本語ドキュメント](https://github.com/nlyamada/export-igorgraph/tree/HEAD/docs/ja/)
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT — see [LICENSE](https://github.com/nlyamada/export-igorgraph/blob/HEAD/LICENSE).
 
 *Igor Pro is a product and trademark of WaveMetrics, Inc. This project is independent and not affiliated with or endorsed by WaveMetrics.*
