@@ -1,0 +1,477 @@
+{
+ "g01_line": {
+  "commands": [
+   "DoWindow/K g01_line",
+   "Display/N=g01_line g01_line_t0_y vs g01_line_t0_x",
+   "AppendToGraph/W=g01_line g01_line_t1_y vs g01_line_t1_x",
+   "ModifyGraph/W=g01_line margin(left)=43,margin(bottom)=37,margin(top)=14,margin(right)=14",
+   "ModifyGraph/W=g01_line gfSize=14,width=226.772,height={Aspect,0.8}",
+   "ModifyGraph/W=g01_line tick=2,mirror=1,standoff=0",
+   "ModifyGraph/W=g01_line mode(g01_line_t0_y)=0,rgb(g01_line_t0_y)=(7967,30583,46260),lSize(g01_line_t0_y)=1.5",
+   "ModifyGraph/W=g01_line mode(g01_line_t1_y)=0,rgb(g01_line_t1_y)=(54998,10023,10280),lSize(g01_line_t1_y)=2.5",
+   "Label/W=g01_line bottom \"\\\\f02x\\\\f00 [a.u.]\"",
+   "Label/W=g01_line left \"\\\\f02y\\\\f00 [a.u.]\"",
+   "Legend/W=g01_line/N=legend0/A=LT \"\\\\s(g01_line_t0_y) sin\\r\\\\s(g01_line_t1_y) cos\"",
+   "DoWindow/F g01_line"
+  ],
+  "warnings": [],
+  "n_traces": 2,
+  "n_images": 0
+ },
+ "g02_markers": {
+  "commands": [
+   "DoWindow/K g02_markers",
+   "Display/N=g02_markers g02_markers_t0_y vs g02_markers_t0_x",
+   "AppendToGraph/W=g02_markers g02_markers_t1_y vs g02_markers_t1_x",
+   "AppendToGraph/W=g02_markers g02_markers_t2_y vs g02_markers_t2_x",
+   "ModifyGraph/W=g02_markers margin(left)=43,margin(bottom)=37,margin(top)=14,margin(right)=14",
+   "ModifyGraph/W=g02_markers gfSize=14,width=226.772,height={Aspect,0.8}",
+   "ModifyGraph/W=g02_markers tick=2,mirror=1,standoff=0",
+   "ModifyGraph/W=g02_markers mode(g02_markers_t0_y)=3,rgb(g02_markers_t0_y)=(7967,30583,46260),marker(g02_markers_t0_y)=8,msize(g02_markers_t0_y)=2.5,mrkThick(g02_markers_t0_y)=1,opaque(g02_markers_t0_y)=0",
+   "ModifyGraph/W=g02_markers mode(g02_markers_t1_y)=3,rgb(g02_markers_t1_y)=(11308,41120,11308),marker(g02_markers_t1_y)=19,msize(g02_markers_t1_y)=2.5,mrkThick(g02_markers_t1_y)=1",
+   "ModifyGraph/W=g02_markers mode(g02_markers_t2_y)=3,rgb(g02_markers_t2_y)=(54998,10023,10280),marker(g02_markers_t2_y)=8,msize(g02_markers_t2_y)=4,mrkThick(g02_markers_t2_y)=1,opaque(g02_markers_t2_y)=1",
+   "Label/W=g02_markers bottom \"\\\\f02x\\\\f00 [a.u.]\"",
+   "Label/W=g02_markers left \"\\\\f02y\\\\f00 [a.u.]\"",
+   "Legend/W=g02_markers/N=legend0/F=0/A=LT \"\\\\s(g02_markers_t0_y) open\\r\\\\s(g02_markers_t1_y) filled\\r\\\\s(g02_markers_t2_y) white face\"",
+   "DoWindow/F g02_markers"
+  ],
+  "warnings": [],
+  "n_traces": 3,
+  "n_images": 0
+ },
+ "g03_err_ysym": {
+  "commands": [
+   "DoWindow/K g03_err_ysym",
+   "Display/N=g03_err_ysym g03_err_ysym_t0_y vs g03_err_ysym_t0_x",
+   "ModifyGraph/W=g03_err_ysym margin(left)=43,margin(bottom)=37,margin(top)=14,margin(right)=14",
+   "ModifyGraph/W=g03_err_ysym gfSize=14,width=226.772,height={Aspect,0.8}",
+   "ModifyGraph/W=g03_err_ysym tick=2,mirror=1,standoff=0",
+   "ModifyGraph/W=g03_err_ysym mode(g03_err_ysym_t0_y)=3,rgb(g03_err_ysym_t0_y)=(0,0,0),marker(g03_err_ysym_t0_y)=19,msize(g03_err_ysym_t0_y)=1.5,mrkThick(g03_err_ysym_t0_y)=1",
+   "ErrorBars/W=g03_err_ysym/T=1/L=1/X=3/Y=3 g03_err_ysym_t0_y, Y wave=(g03_err_ysym_t0_ey,g03_err_ysym_t0_ey)",
+   "Label/W=g03_err_ysym bottom \"\\\\f02x\\\\f00 [a.u.]\"",
+   "Label/W=g03_err_ysym left \"\\\\f02y\\\\f00 [a.u.]\"",
+   "Legend/W=g03_err_ysym/N=legend0/F=0/A=LT \"\\\\s(g03_err_ysym_t0_y) data\"",
+   "DoWindow/F g03_err_ysym"
+  ],
+  "warnings": [],
+  "n_traces": 1,
+  "n_images": 0
+ },
+ "g04_err_yasym": {
+  "commands": [
+   "DoWindow/K g04_err_yasym",
+   "Display/N=g04_err_yasym g04_err_yasym_t0_y vs g04_err_yasym_t0_x",
+   "ModifyGraph/W=g04_err_yasym margin(left)=43,margin(bottom)=37,margin(top)=14,margin(right)=14",
+   "ModifyGraph/W=g04_err_yasym gfSize=14,width=226.772,height={Aspect,0.8}",
+   "ModifyGraph/W=g04_err_yasym tick=2,mirror=1,standoff=0",
+   "ModifyGraph/W=g04_err_yasym mode(g04_err_yasym_t0_y)=3,rgb(g04_err_yasym_t0_y)=(7967,30583,46260),marker(g04_err_yasym_t0_y)=19,msize(g04_err_yasym_t0_y)=2,mrkThick(g04_err_yasym_t0_y)=1",
+   "ErrorBars/W=g04_err_yasym/T=1/L=1.5/X=2/Y=2/RGB=(54998,10023,10280) g04_err_yasym_t0_y, Y wave=(g04_err_yasym_t0_eyp,g04_err_yasym_t0_eyn)",
+   "Label/W=g04_err_yasym bottom \"\\\\f02x\\\\f00 [a.u.]\"",
+   "Label/W=g04_err_yasym left \"\\\\f02y\\\\f00 [a.u.]\"",
+   "Legend/W=g04_err_yasym/N=legend0/F=0/A=LT \"\\\\s(g04_err_yasym_t0_y) asym\"",
+   "DoWindow/F g04_err_yasym"
+  ],
+  "warnings": [
+   "errorbar 'asym': マーカー 's' は Igor のマーカー番号が未確認のため、円にしました"
+  ],
+  "n_traces": 1,
+  "n_images": 0
+ },
+ "g05_err_xy": {
+  "commands": [
+   "DoWindow/K g05_err_xy",
+   "Display/N=g05_err_xy g05_err_xy_t0_y vs g05_err_xy_t0_x",
+   "ModifyGraph/W=g05_err_xy margin(left)=43,margin(bottom)=37,margin(top)=14,margin(right)=14",
+   "ModifyGraph/W=g05_err_xy gfSize=14,width=226.772,height={Aspect,0.8}",
+   "ModifyGraph/W=g05_err_xy tick=2,mirror=1,standoff=0",
+   "ModifyGraph/W=g05_err_xy mode(g05_err_xy_t0_y)=3,rgb(g05_err_xy_t0_y)=(38036,26471,48573),marker(g05_err_xy_t0_y)=19,msize(g05_err_xy_t0_y)=2,mrkThick(g05_err_xy_t0_y)=1",
+   "ErrorBars/W=g05_err_xy/T=1/L=1.5/X=2/Y=2 g05_err_xy_t0_y, XY wave=(g05_err_xy_t0_ex,g05_err_xy_t0_ex), wave=(g05_err_xy_t0_ey,g05_err_xy_t0_ey)",
+   "Label/W=g05_err_xy bottom \"\\\\f02x\\\\f00 [a.u.]\"",
+   "Label/W=g05_err_xy left \"\\\\f02y\\\\f00 [a.u.]\"",
+   "Legend/W=g05_err_xy/N=legend0/F=0/A=RB \"\\\\s(g05_err_xy_t0_y) xy\"",
+   "DoWindow/F g05_err_xy"
+  ],
+  "warnings": [],
+  "n_traces": 1,
+  "n_images": 0
+ },
+ "g06_loglog": {
+  "commands": [
+   "DoWindow/K g06_loglog",
+   "Display/N=g06_loglog g06_loglog_t0_y vs g06_loglog_t0_x",
+   "AppendToGraph/W=g06_loglog g06_loglog_t1_y vs g06_loglog_t1_x",
+   "ModifyGraph/W=g06_loglog margin(left)=43,margin(bottom)=37,margin(top)=14,margin(right)=14",
+   "ModifyGraph/W=g06_loglog gfSize=14,width=226.772,height={Aspect,0.8}",
+   "ModifyGraph/W=g06_loglog tick=2,mirror=1,standoff=0",
+   "ModifyGraph/W=g06_loglog log(bottom)=1",
+   "SetAxis/W=g06_loglog bottom 0.1,10",
+   "ModifyGraph/W=g06_loglog log(left)=1",
+   "ModifyGraph/W=g06_loglog mode(g06_loglog_t0_y)=3,rgb(g06_loglog_t0_y)=(0,0,0),marker(g06_loglog_t0_y)=19,msize(g06_loglog_t0_y)=1.5,mrkThick(g06_loglog_t0_y)=1",
+   "ErrorBars/W=g06_loglog/T=1/L=0.8/X=2/Y=2 g06_loglog_t0_y, Y wave=(g06_loglog_t0_eyp,g06_loglog_t0_eyn)",
+   "ModifyGraph/W=g06_loglog mode(g06_loglog_t1_y)=0,rgb(g06_loglog_t1_y)=(54998,10023,10280),lSize(g06_loglog_t1_y)=1.5",
+   "Label/W=g06_loglog bottom \"\\\\f02Q\\\\f00 [nm\\\\S-1\\\\M]\"",
+   "Label/W=g06_loglog left \"Reflectivity\"",
+   "Legend/W=g06_loglog/N=legend0/F=0/A=RT \"\\\\s(g06_loglog_t1_y) fit\\r\\\\s(g06_loglog_t0_y) data\"",
+   "DoWindow/F g06_loglog"
+  ],
+  "warnings": [],
+  "n_traces": 2,
+  "n_images": 0
+ },
+ "g07_semilogx": {
+  "commands": [
+   "DoWindow/K g07_semilogx",
+   "Display/N=g07_semilogx g07_semilogx_t0_y vs g07_semilogx_t0_x",
+   "ModifyGraph/W=g07_semilogx margin(left)=43,margin(bottom)=37,margin(top)=14,margin(right)=14",
+   "ModifyGraph/W=g07_semilogx gfSize=14,width=226.772,height={Aspect,0.8}",
+   "ModifyGraph/W=g07_semilogx tick=2,mirror=1,standoff=0",
+   "ModifyGraph/W=g07_semilogx log(bottom)=1",
+   "SetAxis/W=g07_semilogx bottom 0.01,100",
+   "SetAxis/W=g07_semilogx left 0,1.1",
+   "ModifyGraph/W=g07_semilogx mode(g07_semilogx_t0_y)=0,rgb(g07_semilogx_t0_y)=(65535,32639,3598),lSize(g07_semilogx_t0_y)=2",
+   "Label/W=g07_semilogx bottom \"\\u03C9 [rad s\\\\S-1\\\\M]\"",
+   "Label/W=g07_semilogx left \"|\\\\f02H\\\\f00| [a.u.]\"",
+   "DoWindow/F g07_semilogx"
+  ],
+  "warnings": [],
+  "n_traces": 1,
+  "n_images": 0
+ },
+ "g08_semilogy": {
+  "commands": [
+   "DoWindow/K g08_semilogy",
+   "Display/N=g08_semilogy g08_semilogy_t0_y vs g08_semilogy_t0_x",
+   "AppendToGraph/W=g08_semilogy g08_semilogy_t1_y vs g08_semilogy_t1_x",
+   "ModifyGraph/W=g08_semilogy margin(left)=43,margin(bottom)=37,margin(top)=14,margin(right)=14",
+   "ModifyGraph/W=g08_semilogy gfSize=14,width=226.772,height={Aspect,0.8}",
+   "ModifyGraph/W=g08_semilogy tick=2,mirror=1,standoff=0",
+   "ModifyGraph/W=g08_semilogy log(left)=1",
+   "ModifyGraph/W=g08_semilogy mode(g08_semilogy_t0_y)=0,rgb(g08_semilogy_t0_y)=(11308,41120,11308),lSize(g08_semilogy_t0_y)=2",
+   "ModifyGraph/W=g08_semilogy mode(g08_semilogy_t1_y)=0,rgb(g08_semilogy_t1_y)=(38036,26471,48573),lSize(g08_semilogy_t1_y)=1",
+   "Label/W=g08_semilogy bottom \"\\\\f02t\\\\f00 [s]\"",
+   "Label/W=g08_semilogy left \"\\\\f02I\\\\f00 [a.u.]\"",
+   "DoWindow/F g08_semilogy"
+  ],
+  "warnings": [],
+  "n_traces": 2,
+  "n_images": 0
+ },
+ "g09_inverted": {
+  "commands": [
+   "DoWindow/K g09_inverted",
+   "Display/N=g09_inverted g09_inverted_t0_y vs g09_inverted_t0_x",
+   "ModifyGraph/W=g09_inverted margin(left)=43,margin(bottom)=37,margin(top)=14,margin(right)=14",
+   "ModifyGraph/W=g09_inverted gfSize=14,width=226.772,height={Aspect,0.8}",
+   "ModifyGraph/W=g09_inverted tick=2,mirror=1,standoff=0",
+   "SetAxis/W=g09_inverted bottom 5,0",
+   "SetAxis/W=g09_inverted left 0,30",
+   "ModifyGraph/W=g09_inverted mode(g09_inverted_t0_y)=0,rgb(g09_inverted_t0_y)=(0,0,0),lSize(g09_inverted_t0_y)=1.5",
+   "Label/W=g09_inverted bottom \"\\\\f02x\\\\f00 [a.u.]\"",
+   "Label/W=g09_inverted left \"\\\\f02y\\\\f00 [a.u.]\"",
+   "DoWindow/F g09_inverted"
+  ],
+  "warnings": [],
+  "n_traces": 1,
+  "n_images": 0
+ },
+ "g10_legend_lb": {
+  "commands": [
+   "DoWindow/K g10_legend_lb",
+   "Display/N=g10_legend_lb g10_legend_lb_t0_y vs g10_legend_lb_t0_x",
+   "AppendToGraph/W=g10_legend_lb g10_legend_lb_t1_y vs g10_legend_lb_t1_x",
+   "AppendToGraph/W=g10_legend_lb g10_legend_lb_t2_y vs g10_legend_lb_t2_x",
+   "ModifyGraph/W=g10_legend_lb margin(left)=43,margin(bottom)=37,margin(top)=14,margin(right)=14",
+   "ModifyGraph/W=g10_legend_lb gfSize=14,width=226.772,height={Aspect,0.8}",
+   "ModifyGraph/W=g10_legend_lb tick=2,mirror=1,standoff=0",
+   "ModifyGraph/W=g10_legend_lb mode(g10_legend_lb_t0_y)=0,rgb(g10_legend_lb_t0_y)=(7967,30583,46260),lSize(g10_legend_lb_t0_y)=1.5",
+   "ModifyGraph/W=g10_legend_lb mode(g10_legend_lb_t1_y)=0,rgb(g10_legend_lb_t1_y)=(65535,32639,3598),lSize(g10_legend_lb_t1_y)=1.5",
+   "ModifyGraph/W=g10_legend_lb mode(g10_legend_lb_t2_y)=0,rgb(g10_legend_lb_t2_y)=(11308,41120,11308),lSize(g10_legend_lb_t2_y)=1.5",
+   "Label/W=g10_legend_lb bottom \"\\\\f02x\\\\f00 [a.u.]\"",
+   "Label/W=g10_legend_lb left \"\\\\f02y\\\\f00 [a.u.]\"",
+   "Legend/W=g10_legend_lb/N=legend0/A=LB \"\\\\s(g10_legend_lb_t0_y) s0\\r\\\\s(g10_legend_lb_t1_y) s1\\r\\\\s(g10_legend_lb_t2_y) s2\"",
+   "DoWindow/F g10_legend_lb"
+  ],
+  "warnings": [],
+  "n_traces": 3,
+  "n_images": 0
+ },
+ "g11_legend_rc": {
+  "commands": [
+   "DoWindow/K g11_legend_rc",
+   "Display/N=g11_legend_rc g11_legend_rc_t0_y vs g11_legend_rc_t0_x",
+   "AppendToGraph/W=g11_legend_rc g11_legend_rc_t1_y vs g11_legend_rc_t1_x",
+   "ModifyGraph/W=g11_legend_rc margin(left)=43,margin(bottom)=37,margin(top)=14,margin(right)=14",
+   "ModifyGraph/W=g11_legend_rc gfSize=14,width=226.772,height={Aspect,0.8}",
+   "ModifyGraph/W=g11_legend_rc tick=2,mirror=1,standoff=0",
+   "ModifyGraph/W=g11_legend_rc mode(g11_legend_rc_t0_y)=0,rgb(g11_legend_rc_t0_y)=(54998,10023,10280),lSize(g11_legend_rc_t0_y)=1.5",
+   "ModifyGraph/W=g11_legend_rc mode(g11_legend_rc_t1_y)=0,rgb(g11_legend_rc_t1_y)=(7967,30583,46260),lSize(g11_legend_rc_t1_y)=1.5",
+   "Label/W=g11_legend_rc bottom \"\\\\f02x\\\\f00 [a.u.]\"",
+   "Label/W=g11_legend_rc left \"\\\\f02y\\\\f00 [a.u.]\"",
+   "Legend/W=g11_legend_rc/N=legend0/F=0/A=RC \"\\\\s(g11_legend_rc_t0_y) linear\\r\\\\s(g11_legend_rc_t1_y) quad\"",
+   "DoWindow/F g11_legend_rc"
+  ],
+  "warnings": [
+   "line[1] 'quad': 線種 '--' は Igor の線種番号が未確認のため、実線にしました"
+  ],
+  "n_traces": 2,
+  "n_images": 0
+ },
+ "g12_labels_math": {
+  "commands": [
+   "DoWindow/K g12_labels_math",
+   "Display/N=g12_labels_math g12_labels_math_t0_y vs g12_labels_math_t0_x",
+   "ModifyGraph/W=g12_labels_math margin(left)=43,margin(bottom)=37,margin(top)=14,margin(right)=14",
+   "ModifyGraph/W=g12_labels_math gfSize=14,width=226.772,height={Aspect,0.8}",
+   "ModifyGraph/W=g12_labels_math tick=2,mirror=1,standoff=0",
+   "ModifyGraph/W=g12_labels_math mode(g12_labels_math_t0_y)=0,rgb(g12_labels_math_t0_y)=(0,0,0),lSize(g12_labels_math_t0_y)=1.5",
+   "Label/W=g12_labels_math bottom \"\\\\f02Q\\\\f00\\\\Bz\\\\M [nm\\\\S-1\\\\M]\"",
+   "Label/W=g12_labels_math left \"\\u0394\\u03C1 [\\u03BCm\\\\S-2\\\\M]\"",
+   "Legend/W=g12_labels_math/N=legend0/F=0/A=RT \"\\\\s(g12_labels_math_t0_y) \\\\f02I\\\\f00(\\\\f02Q\\\\f00\\\\Bz\\\\M)\"",
+   "DoWindow/F g12_labels_math"
+  ],
+  "warnings": [],
+  "n_traces": 1,
+  "n_images": 0
+ },
+ "g13_scatter": {
+  "commands": [
+   "DoWindow/K g13_scatter",
+   "Display/N=g13_scatter g13_scatter_t0_y vs g13_scatter_t0_x",
+   "AppendToGraph/W=g13_scatter g13_scatter_t1_y vs g13_scatter_t1_x",
+   "ModifyGraph/W=g13_scatter margin(left)=43,margin(bottom)=37,margin(top)=14,margin(right)=14",
+   "ModifyGraph/W=g13_scatter gfSize=14,width=226.772,height={Aspect,0.8}",
+   "ModifyGraph/W=g13_scatter tick=2,mirror=1,standoff=0",
+   "ModifyGraph/W=g13_scatter mode(g13_scatter_t0_y)=3,rgb(g13_scatter_t0_y)=(7967,30583,46260),marker(g13_scatter_t0_y)=19,msize(g13_scatter_t0_y)=2,mrkThick(g13_scatter_t0_y)=1",
+   "ModifyGraph/W=g13_scatter mode(g13_scatter_t1_y)=3,rgb(g13_scatter_t1_y)=(54998,10023,10280),marker(g13_scatter_t1_y)=8,msize(g13_scatter_t1_y)=2.5,mrkThick(g13_scatter_t1_y)=1,opaque(g13_scatter_t1_y)=0",
+   "Label/W=g13_scatter bottom \"\\\\f02x\\\\f00 [a.u.]\"",
+   "Label/W=g13_scatter left \"\\\\f02y\\\\f00 [a.u.]\"",
+   "Legend/W=g13_scatter/N=legend0/F=0/A=LT \"\\\\s(g13_scatter_t0_y) a\\r\\\\s(g13_scatter_t1_y) b\"",
+   "DoWindow/F g13_scatter"
+  ],
+  "warnings": [],
+  "n_traces": 2,
+  "n_images": 0
+ },
+ "g14_grid": {
+  "commands": [
+   "DoWindow/K g14_grid",
+   "Display/N=g14_grid g14_grid_t0_y vs g14_grid_t0_x",
+   "ModifyGraph/W=g14_grid margin(left)=43,margin(bottom)=37,margin(top)=14,margin(right)=14",
+   "ModifyGraph/W=g14_grid gfSize=14,width=226.772,height={Aspect,0.8}",
+   "ModifyGraph/W=g14_grid tick=2,mirror=1,standoff=0",
+   "ModifyGraph/W=g14_grid grid(bottom)=1",
+   "ModifyGraph/W=g14_grid grid(left)=1",
+   "ModifyGraph/W=g14_grid mode(g14_grid_t0_y)=0,rgb(g14_grid_t0_y)=(0,0,0),lSize(g14_grid_t0_y)=1.5",
+   "Label/W=g14_grid bottom \"\\\\f02x\\\\f00 [a.u.]\"",
+   "Label/W=g14_grid left \"\\\\f02y\\\\f00 [a.u.]\"",
+   "DoWindow/F g14_grid"
+  ],
+  "warnings": [],
+  "n_traces": 1,
+  "n_images": 0
+ },
+ "g15_many": {
+  "commands": [
+   "DoWindow/K g15_many",
+   "Display/N=g15_many g15_many_t0_y vs g15_many_t0_x",
+   "AppendToGraph/W=g15_many g15_many_t1_y vs g15_many_t1_x",
+   "AppendToGraph/W=g15_many g15_many_t2_y vs g15_many_t2_x",
+   "AppendToGraph/W=g15_many g15_many_t3_y vs g15_many_t3_x",
+   "AppendToGraph/W=g15_many g15_many_t4_y vs g15_many_t4_x",
+   "AppendToGraph/W=g15_many g15_many_t5_y vs g15_many_t5_x",
+   "AppendToGraph/W=g15_many g15_many_t6_y vs g15_many_t6_x",
+   "AppendToGraph/W=g15_many g15_many_t7_y vs g15_many_t7_x",
+   "AppendToGraph/W=g15_many g15_many_t8_y vs g15_many_t8_x",
+   "AppendToGraph/W=g15_many g15_many_t9_y vs g15_many_t9_x",
+   "ModifyGraph/W=g15_many margin(left)=43,margin(bottom)=37,margin(top)=14,margin(right)=14",
+   "ModifyGraph/W=g15_many gfSize=14,width=226.772,height={Aspect,0.8}",
+   "ModifyGraph/W=g15_many tick=2,mirror=1,standoff=0",
+   "ModifyGraph/W=g15_many mode(g15_many_t0_y)=0,rgb(g15_many_t0_y)=(7967,30583,46260),lSize(g15_many_t0_y)=1.2",
+   "ModifyGraph/W=g15_many mode(g15_many_t1_y)=0,rgb(g15_many_t1_y)=(65535,32639,3598),lSize(g15_many_t1_y)=1.2",
+   "ModifyGraph/W=g15_many mode(g15_many_t2_y)=0,rgb(g15_many_t2_y)=(11308,41120,11308),lSize(g15_many_t2_y)=1.2",
+   "ModifyGraph/W=g15_many mode(g15_many_t3_y)=0,rgb(g15_many_t3_y)=(54998,10023,10280),lSize(g15_many_t3_y)=1.2",
+   "ModifyGraph/W=g15_many mode(g15_many_t4_y)=0,rgb(g15_many_t4_y)=(38036,26471,48573),lSize(g15_many_t4_y)=1.2",
+   "ModifyGraph/W=g15_many mode(g15_many_t5_y)=0,rgb(g15_many_t5_y)=(35980,22102,19275),lSize(g15_many_t5_y)=1.2",
+   "ModifyGraph/W=g15_many mode(g15_many_t6_y)=0,rgb(g15_many_t6_y)=(58339,30583,49858),lSize(g15_many_t6_y)=1.2",
+   "ModifyGraph/W=g15_many mode(g15_many_t7_y)=0,rgb(g15_many_t7_y)=(32639,32639,32639),lSize(g15_many_t7_y)=1.2",
+   "ModifyGraph/W=g15_many mode(g15_many_t8_y)=0,rgb(g15_many_t8_y)=(48316,48573,8738),lSize(g15_many_t8_y)=1.2",
+   "ModifyGraph/W=g15_many mode(g15_many_t9_y)=0,rgb(g15_many_t9_y)=(5911,48830,53199),lSize(g15_many_t9_y)=1.2",
+   "Label/W=g15_many bottom \"\\\\f02x\\\\f00 [a.u.]\"",
+   "Label/W=g15_many left \"\\\\f02y\\\\f00 [a.u.]\"",
+   "DoWindow/F g15_many"
+  ],
+  "warnings": [],
+  "n_traces": 10,
+  "n_images": 0
+ },
+ "g16_big": {
+  "commands": [
+   "DoWindow/K g16_big",
+   "Display/N=g16_big g16_big_t0_y vs g16_big_t0_x",
+   "ModifyGraph/W=g16_big margin(left)=43,margin(bottom)=37,margin(top)=14,margin(right)=14",
+   "ModifyGraph/W=g16_big gfSize=14,width=226.772,height={Aspect,0.8}",
+   "ModifyGraph/W=g16_big tick=2,mirror=1,standoff=0",
+   "ModifyGraph/W=g16_big log(left)=1",
+   "ModifyGraph/W=g16_big mode(g16_big_t0_y)=0,rgb(g16_big_t0_y)=(0,0,0),lSize(g16_big_t0_y)=0.5",
+   "Label/W=g16_big bottom \"\\\\f02t\\\\f00 [s]\"",
+   "Label/W=g16_big left \"\\\\f02I\\\\f00 [a.u.]\"",
+   "DoWindow/F g16_big"
+  ],
+  "warnings": [],
+  "n_traces": 1,
+  "n_images": 0
+ },
+ "g17_img_upper": {
+  "commands": [
+   "Redimension/U/W g17_img_upper_i0_ct",
+   "DoWindow/K g17_img_upper",
+   "Display/N=g17_img_upper",
+   "AppendImage/W=g17_img_upper g17_img_upper_i0_z vs {g17_img_upper_i0_xe,g17_img_upper_i0_ye}",
+   "ModifyGraph/W=g17_img_upper margin(left)=51,margin(bottom)=43,margin(top)=14,margin(right)=57",
+   "ModifyGraph/W=g17_img_upper gfSize=12,width=227,height={Aspect,0.6}",
+   "SetAxis/W=g17_img_upper bottom -0.5,9.5",
+   "SetAxis/W=g17_img_upper left 5.5,-0.5",
+   "ModifyImage/W=g17_img_upper g17_img_upper_i0_z ctab={1,200,g17_img_upper_i0_ct,0}",
+   "Label/W=g17_img_upper bottom \"\\\\f02Q\\\\f00\\\\Bx\\\\M [nm\\\\S-1\\\\M]\"",
+   "Label/W=g17_img_upper left \"\\\\f02Q\\\\f00\\\\Bz\\\\M [nm\\\\S-1\\\\M]\"",
+   "DoWindow/F g17_img_upper",
+   "ColorScale/C/N=cs0/A=MC image=g17_img_upper_i0_z",
+   "ColorScale/C/N=cs0 \"Intensity [a.u.]\"",
+   "ColorScale/C/N=cs0 lblMargin=15",
+   "ColorScale/C/N=cs0/X=56.00/Y=16.00",
+   "DoWindow/F g17_img_upper"
+  ],
+  "warnings": [],
+  "n_traces": 0,
+  "n_images": 1
+ },
+ "g18_img_lower": {
+  "commands": [
+   "Redimension/U/W g18_img_lower_i0_ct",
+   "DoWindow/K g18_img_lower",
+   "Display/N=g18_img_lower",
+   "AppendImage/W=g18_img_lower g18_img_lower_i0_z vs {g18_img_lower_i0_xe,g18_img_lower_i0_ye}",
+   "ModifyGraph/W=g18_img_lower margin(left)=51,margin(bottom)=43,margin(top)=14,margin(right)=57",
+   "ModifyGraph/W=g18_img_lower gfSize=12,width=227,height={Aspect,1}",
+   "SetAxis/W=g18_img_lower bottom 0,10",
+   "SetAxis/W=g18_img_lower left 0,6",
+   "ModifyImage/W=g18_img_lower g18_img_lower_i0_z ctab={1,200,g18_img_lower_i0_ct,0}",
+   "Label/W=g18_img_lower bottom \"\\\\f02Q\\\\f00\\\\Bx\\\\M [nm\\\\S-1\\\\M]\"",
+   "Label/W=g18_img_lower left \"\\\\f02Q\\\\f00\\\\Bz\\\\M [nm\\\\S-1\\\\M]\"",
+   "DoWindow/F g18_img_lower"
+  ],
+  "warnings": [],
+  "n_traces": 0,
+  "n_images": 1
+ },
+ "g19_img_logmask": {
+  "commands": [
+   "Redimension/U/W g19_img_logmask_i0_ct",
+   "DoWindow/K g19_img_logmask",
+   "Display/N=g19_img_logmask",
+   "AppendImage/W=g19_img_logmask g19_img_logmask_i0_z vs {g19_img_logmask_i0_xe,g19_img_logmask_i0_ye}",
+   "ModifyGraph/W=g19_img_logmask margin(left)=51,margin(bottom)=43,margin(top)=14,margin(right)=57",
+   "ModifyGraph/W=g19_img_logmask gfSize=12,width=227,height={Aspect,1}",
+   "SetAxis/W=g19_img_logmask bottom -1,1",
+   "SetAxis/W=g19_img_logmask left 0,1.5",
+   "ModifyImage/W=g19_img_logmask g19_img_logmask_i0_z ctab={1,100000,g19_img_logmask_i0_ct,0},log=1",
+   "Label/W=g19_img_logmask bottom \"\\\\f02Q\\\\f00\\\\Bx\\\\M [nm\\\\S-1\\\\M]\"",
+   "Label/W=g19_img_logmask left \"\\\\f02Q\\\\f00\\\\Bz\\\\M [nm\\\\S-1\\\\M]\"",
+   "DoWindow/F g19_img_logmask",
+   "ColorScale/C/N=cs0/A=MC image=g19_img_logmask_i0_z,log=1",
+   "ColorScale/C/N=cs0 logLTrip=0.1",
+   "ColorScale/C/N=cs0 \"Intensity [a.u.]\"",
+   "ColorScale/C/N=cs0 lblMargin=15",
+   "ColorScale/C/N=cs0/X=56.00/Y=16.00",
+   "DoWindow/F g19_img_logmask"
+  ],
+  "warnings": [],
+  "n_traces": 0,
+  "n_images": 1
+ },
+ "g20_mesh_nonuni": {
+  "commands": [
+   "Redimension/U/W g20_mesh_nonuni_i0_ct",
+   "DoWindow/K g20_mesh_nonuni",
+   "Display/N=g20_mesh_nonuni",
+   "AppendImage/W=g20_mesh_nonuni g20_mesh_nonuni_i0_z vs {g20_mesh_nonuni_i0_xe,g20_mesh_nonuni_i0_ye}",
+   "ModifyGraph/W=g20_mesh_nonuni margin(left)=51,margin(bottom)=43,margin(top)=14,margin(right)=57",
+   "ModifyGraph/W=g20_mesh_nonuni gfSize=12,width=227,height={Aspect,1}",
+   "SetAxis/W=g20_mesh_nonuni bottom 0,10",
+   "SetAxis/W=g20_mesh_nonuni left 0,7",
+   "ModifyImage/W=g20_mesh_nonuni g20_mesh_nonuni_i0_z ctab={1,12,g20_mesh_nonuni_i0_ct,0}",
+   "Label/W=g20_mesh_nonuni bottom \"\\\\f02x\\\\f00 [mm]\"",
+   "Label/W=g20_mesh_nonuni left \"\\\\f02y\\\\f00 [mm]\"",
+   "DoWindow/F g20_mesh_nonuni",
+   "ColorScale/C/N=cs0/A=MC image=g20_mesh_nonuni_i0_z",
+   "ColorScale/C/N=cs0 \"Counts [a.u.]\"",
+   "ColorScale/C/N=cs0 lblMargin=15",
+   "ColorScale/C/N=cs0/X=56.00/Y=16.00",
+   "DoWindow/F g20_mesh_nonuni"
+  ],
+  "warnings": [],
+  "n_traces": 0,
+  "n_images": 1
+ },
+ "g21_img_overlay": {
+  "commands": [
+   "DoWindow/K g21_img_overlay",
+   "Display/N=g21_img_overlay",
+   "AppendImage/W=g21_img_overlay g21_img_overlay_i0_z vs {g21_img_overlay_i0_xe,g21_img_overlay_i0_ye}",
+   "AppendToGraph/W=g21_img_overlay g21_img_overlay_t0_y vs g21_img_overlay_t0_x",
+   "ModifyGraph/W=g21_img_overlay margin(left)=51,margin(bottom)=43,margin(top)=14,margin(right)=57",
+   "ModifyGraph/W=g21_img_overlay gfSize=12,width=227,height={Aspect,0.6}",
+   "SetAxis/W=g21_img_overlay bottom -0.5,9.5",
+   "SetAxis/W=g21_img_overlay left 5.5,-0.5",
+   "ModifyImage/W=g21_img_overlay g21_img_overlay_i0_z ctab={1,200,Rainbow,1}",
+   "ModifyGraph/W=g21_img_overlay mode(g21_img_overlay_t0_y)=0,rgb(g21_img_overlay_t0_y)=(65535,65535,65535),lSize(g21_img_overlay_t0_y)=2",
+   "Label/W=g21_img_overlay bottom \"\\\\f02x\\\\f00 [pixel]\"",
+   "Label/W=g21_img_overlay left \"\\\\f02y\\\\f00 [pixel]\"",
+   "DoWindow/F g21_img_overlay"
+  ],
+  "warnings": [],
+  "n_traces": 1,
+  "n_images": 1
+ },
+ "g22_mplsize": {
+  "commands": [
+   "DoWindow/K g22_mplsize",
+   "Display/N=g22_mplsize g22_mplsize_t0_y vs g22_mplsize_t0_x",
+   "ModifyGraph/W=g22_mplsize margin(left)=72,margin(bottom)=43.2,margin(top)=28.8,margin(right)=36",
+   "ModifyGraph/W=g22_mplsize gfSize=14,width=252,height=216",
+   "ModifyGraph/W=g22_mplsize tick=2,mirror=1,standoff=0",
+   "ModifyGraph/W=g22_mplsize mode(g22_mplsize_t0_y)=0,rgb(g22_mplsize_t0_y)=(0,0,0),lSize(g22_mplsize_t0_y)=1.5",
+   "Label/W=g22_mplsize bottom \"\\\\f02x\\\\f00 [a.u.]\"",
+   "Label/W=g22_mplsize left \"\\\\f02y\\\\f00 [a.u.]\"",
+   "Legend/W=g22_mplsize/N=legend0/F=0/A=RT \"\\\\s(g22_mplsize_t0_y) sin\"",
+   "DoWindow/F g22_mplsize"
+  ],
+  "warnings": [],
+  "n_traces": 1,
+  "n_images": 0
+ },
+ "g23_img_extup": {
+  "commands": [
+   "Redimension/U/W g23_img_extup_i0_ct",
+   "DoWindow/K g23_img_extup",
+   "Display/N=g23_img_extup",
+   "AppendImage/W=g23_img_extup g23_img_extup_i0_z vs {g23_img_extup_i0_xe,g23_img_extup_i0_ye}",
+   "ModifyGraph/W=g23_img_extup margin(left)=51,margin(bottom)=43,margin(top)=14,margin(right)=57",
+   "ModifyGraph/W=g23_img_extup gfSize=12,width=227,height={Aspect,0.6}",
+   "SetAxis/W=g23_img_extup bottom 0,10",
+   "SetAxis/W=g23_img_extup left 0,6",
+   "ModifyImage/W=g23_img_extup g23_img_extup_i0_z ctab={1,200,g23_img_extup_i0_ct,0}",
+   "Label/W=g23_img_extup bottom \"\\\\f02Q\\\\f00\\\\Bx\\\\M [nm\\\\S-1\\\\M]\"",
+   "Label/W=g23_img_extup left \"\\\\f02Q\\\\f00\\\\Bz\\\\M [nm\\\\S-1\\\\M]\"",
+   "DoWindow/F g23_img_extup",
+   "ColorScale/C/N=cs0/A=MC image=g23_img_extup_i0_z",
+   "ColorScale/C/N=cs0 \"Intensity [a.u.]\"",
+   "ColorScale/C/N=cs0 lblMargin=15",
+   "ColorScale/C/N=cs0/X=56.00/Y=16.00",
+   "DoWindow/F g23_img_extup"
+  ],
+  "warnings": [],
+  "n_traces": 0,
+  "n_images": 1
+ }
+}

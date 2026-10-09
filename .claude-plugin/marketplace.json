@@ -1,0 +1,14 @@
+{
+  "name": "export-igorgraph",
+  "description": "Turn matplotlib figures into Igor Pro graphs",
+  "owner": {
+    "name": "Norifumi L. YAMADA"
+  },
+  "plugins": [
+    {
+      "name": "export-igorgraph",
+      "source": "./plugin",
+      "description": "Skill that exports matplotlib figures (lines, error bars, images, contours) to Igor Pro 8 graphs"
+    }
+  ]
+}

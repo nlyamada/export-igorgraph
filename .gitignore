@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+# generated while testing / comparing in Igor
+rounds/
+*_igor.png
+igor_audit.txt
+igor_history.txt
+EIG_done.txt
+audit_report.md
+.DS_Store

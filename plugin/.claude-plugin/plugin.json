@@ -1,0 +1,10 @@
+{
+  "name": "export-igorgraph",
+  "version": "0.1.0",
+  "description": "Skill that exports matplotlib figures (lines, error bars, images, contours) to Igor Pro 8 graphs",
+  "author": {
+    "name": "Norifumi L. YAMADA"
+  },
+  "license": "MIT",
+  "keywords": ["igor-pro", "matplotlib", "plotting"]
+}

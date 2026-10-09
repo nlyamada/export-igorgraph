@@ -1,0 +1,11 @@
+{
+  "_comment": "Copy to export_igorgraph_style.json (current folder), ~/.export_igorgraph_style.json, or point EXPORT_IGORGRAPH_STYLE at it. Keys starting with _ are ignored. style= in export_igor() overrides these.",
+  "tick": 2,
+  "mirror": 1,
+  "standoff": 0,
+  "grid": null,
+  "width": 226.772,
+  "height": null,
+  "font": "Arial",
+  "gFont": "Arial"
+}

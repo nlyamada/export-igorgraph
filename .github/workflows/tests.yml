@@ -1,0 +1,35 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          # (Python, matplotlib, numpy constraint). Igor itself is not needed: these tests check the generated commands,
+          # the allow-list, the HDF5 writer and the layout model. Behavior in Igor is checked by hand (docs/en/verified.md).
+          - { os: ubuntu-latest,  python: "3.9",  mpl: "3.6.3",  numpy: "numpy<2" }
+          - { os: ubuntu-latest,  python: "3.10", mpl: "3.8.4",  numpy: "numpy<2" }
+          - { os: ubuntu-latest,  python: "3.11", mpl: "3.9.4",  numpy: "numpy" }
+          - { os: ubuntu-latest,  python: "3.12", mpl: "3.10.7", numpy: "numpy" }
+          - { os: windows-latest, python: "3.11", mpl: "3.9.4",  numpy: "numpy" }
+          - { os: windows-latest, python: "3.12", mpl: "3.10.7", numpy: "numpy" }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install "matplotlib==${{ matrix.mpl }}" "${{ matrix.numpy }}" h5py
+          python -m pip install -e .
+      - name: Tests
+        run: python -X utf8 tests/run_all.py
